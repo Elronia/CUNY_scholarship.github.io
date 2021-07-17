@@ -2,9 +2,14 @@ body {
 	background: #e6e6e6;
 }
 
+nav {
+	align-items: center;
+}
+
 .nav {
+	align-items: center;
 	text-align: center;
-line-height: normal;
+	line-height: normal;
 }
 
 nav ul {
@@ -36,6 +41,7 @@ li a:hover {
 
 .assignm-1 {
     display: flex;
+	justify-content: center;
 }
 
 .assignm-1 iframe {
