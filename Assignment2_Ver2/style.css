@@ -29,6 +29,14 @@ li a:hover {
     background-color: #b8afaf;
 }
 
+.assignm-1 {
+    display: flex;
+}
+
+.assignm-1 iframe {
+    justify-content: center;
+}
+
 footer {
 	position: relative;
 	width: 100%;
