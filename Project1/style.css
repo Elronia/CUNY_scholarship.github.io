@@ -81,7 +81,7 @@ main {
     top: -5%
 }
   
-main > div > img {
+main > div > a > img {
     width: 100;
     height: 100%;
 }
