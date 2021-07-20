@@ -2,8 +2,7 @@
 .logos {
     /* border:1px solid red; */
     height: 100px;
-    /* display flex allows me to display the two logos one on the left
-    and one on the right */
+    /* display flex allows me to display the two logos one on the left and one on the right */
     display: flex;
     justify-content: space-between;
 }
@@ -124,7 +123,6 @@ footer {
 footer ul li {
     display: inline;
     text-align: center;
-    /* font-weight: bold; */
     font-size: 20px;
     padding: 15px 15px;
 }
