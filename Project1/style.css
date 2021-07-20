@@ -1,3 +1,4 @@
+/*********** Header Section **************/
 .logos {
     /* border:1px solid red; */
     height: 100px;
@@ -23,6 +24,7 @@
     text-align: center;
 }
 
+/*********** Main Section **************/
 .intro {
     width: 100%;
     /* margin-left: 70px; */
@@ -30,6 +32,103 @@
     margin-bottom: 20px;  
 }
 
+.p1 {
+    text-align: center;
+}
+
+main {
+    border: 1px solid black;
+    width: 75%;
+    height: 700px;
+    margin: auto;
+    background-color: rgb(243, 198, 205); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, rgb(136, 218, 197), rgb(243, 198, 205));
+    color: white;
+    font-size: 20px;
+}
+  
+.aurora-img-cont, .glacier-img-cont {
+    border: 5px solid #682978;
+    /* box-shadow: 8px 10px 20px #c497cf; */
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+  
+.aurora-txt, .glacier-txt {
+    /* border: 1px solid red; */
+    width: 55%;
+    height: 40%;
+    float: left;
+    margin-left: 65px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.glacier-txt {
+    margin-top: 15px;
+    display: flex;
+    align-items: center; 
+}
+
+.glacier-txt > p {
+    position: relative;
+    top: -5%
+}
+  
+main > div > img {
+    width: 100;
+    height: 100%;
+}
+
+/************* News *****************/
+.news-1, .news-2 {
+    margin-left: 45px;
+}
+
+/************* Table ****************/
 table {
     border: 2px solid black;
+}
+
+/************* Contact Info ****************/
+.contact {
+    /* border: 2px solid black; */
+    width: 100%;
+    /* height: 100px; */
+}
+  
+.contact-ul {
+    list-style-type: none;
+    position: relative;
+    top: -20px;
+  }
+  
+.contact-ul > li > img {
+    width: 5%;
+    position: relative;
+    top:25px;
+    right: 15px;
+}
+
+/************* Footer ****************/
+footer {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    text-align: center;
+    /* font-weight: bold; */
+    font-size: 20px;
+    padding: 15px 15px;
+}
+  
+footer ul li a {
+    padding-right: 30px;
 }
