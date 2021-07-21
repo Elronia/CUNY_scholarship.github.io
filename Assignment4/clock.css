@@ -1,6 +1,7 @@
 body{
     margin: 0;
     background-color: #f1eaea;
+    color: rgb(194, 190, 190);
     height: 100vh;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -49,13 +50,13 @@ body{
 }
 
 .hours-hand{
-     position: absolute;
-     width: 30%;
-     top: 50%;
-     left: 50%;
-     margin-top: -7%;
-     transform-origin: 0% 50%;
-     animation: hour-move 10s forwards;
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    margin-top: -7%;
+    transform-origin: 0% 50%;
+    animation: hour-move 10s forwards;
 }
 
 .minutes-hand{
