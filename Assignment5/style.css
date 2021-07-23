@@ -1,5 +1,6 @@
 body {
     background-color: #9d7498;
+    padding: 40px;
 }
 
 .container {
@@ -9,11 +10,13 @@ body {
 
 .left, .right {
     width: 39%;
+    height: 60%;
     float: left; 
-    padding: 20px;
+    padding: 50px 4px;
     background-color: #fef2eb;
     margin-bottom: 50px;
     /* border: solid red; */
+    text-align: center;
 }
 
 .left {
@@ -37,9 +40,10 @@ body {
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    /* margin-top: 50px; */
 }
 
-/*This should make them change their color when they are hovered*/
+/*This makes buttons change their color when they are hovered*/
 .button:hover {
     /* background: hsl(293, 80%, 90%); */
     background:#fef2eb;
@@ -53,9 +57,9 @@ body {
 .modal-window {
     position: fixed;
     background-color: rgba(200, 200, 200, 0.75);
-    top: 0;
+    top: -10%;
     right: 0;
-    bottom: 0;
+    /* bottom: 0; */
     left: 0;
     z-index: 999;
     opacity: 0;
@@ -63,10 +67,15 @@ body {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+    text-align: center;
 }
 
 .modal-window header {
     font-weight: bold;
+}
+
+.modal-text {
+    line-height: 1.5;
 }
 
 .modal-window:target {
@@ -78,7 +87,7 @@ body {
     width: 500px;
     position: relative;
     margin: 10% auto;
-    padding: 2rem;
+    padding: 4rem;
     background: #fef2eb;
     color: #444;
 }
@@ -107,13 +116,5 @@ body {
 
 .modal-window h1 {
     font-size: 150%;
-    margin: 0 0 15px;
+    margin: 3% 0 15px;
 }
-
-
-/* */
-
-/* .modal-window:target {
-    opacity: 1;
-    pointer-events: auto;
-} */
