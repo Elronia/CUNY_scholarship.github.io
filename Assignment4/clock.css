@@ -57,6 +57,7 @@ body{
     margin-top: -7%;
     transform-origin: 0% 50%;
     animation: hour-move 10s forwards;
+    animation-timing-function: linear;
 }
 
 .minutes-hand{
