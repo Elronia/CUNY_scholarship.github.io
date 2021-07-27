@@ -10,11 +10,22 @@
     float: left;
 
     margin-left: 4%;
-    animation: ;
+    animation: animatedLogo 2s;
+    animation-iteration-count: infinite;
 }
 
 .logo-img {
-    width: 50%;
+    width: 50%; 
+    
+}
+
+@keyframes animatedLogo {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
 }
 
 .heading1{
@@ -37,8 +48,6 @@
 
 .banner {
     width: 100%;
-    
-    
 }
 
 .banner-img {
@@ -104,4 +113,29 @@
     position: relative;
     text-align: left;
     padding: 30px 30px; 
+}
+
+.row {
+    display: flex;
+    margin: 40px 60px;
+}
+
+.row div {
+    flex: 1;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-container {
+    width: 70%;
+    height: 95%;
+    float: left;
+
+    margin-left: 15%;
+}
+
+.img-left, .img-middle, .img-right {
+    width: 100%;
 }
