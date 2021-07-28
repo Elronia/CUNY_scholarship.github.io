@@ -67,10 +67,11 @@
     background: rgb(241, 220, 220); /* fallback color */
     background: rgba(250, 248, 248, 0.5);
     padding: 20px 20px; 
+    top: 30%;
 }
 
 .flex-container {
-    border: solid red;
+    /* border: solid red; */
     padding: 20px 50px;
     display: flex;
     /* justify-content: space-between; */
@@ -79,7 +80,7 @@
 
 .flex-child {
     flex: 0.5;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 
 .flex-child.left {
@@ -92,7 +93,7 @@
 }
 
 .flex-child.right {
-    border: solid red;
+    /* border: solid red; */
     background-image: linear-gradient(to bottom, rgba(240,188,199, 0.78), rgba(248, 239, 241, 1));
 }
 
@@ -142,7 +143,7 @@
 
 .row .item-info {
     text-align: center;
-    line-height: 0px;
+    /* line-height: 0px; */
 }
 
 .button {
