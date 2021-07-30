@@ -1,10 +1,12 @@
 .header {
     /* border: 2px solid red; */
-    height: 100px;
+    height: 200px;
+    /* display: block;
+    width: 100%; */
 }
   
 .logo {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 20%;
     height: 95%;
     float: left;
@@ -31,20 +33,20 @@
 .heading1 {
     font-style: italic;
     font-size: large;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 70%;
     height: 45%;
-    float: left;
+    /* float: left; */
     animation-name: down;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 .heading2 {
-    border: 2px solid powderblue;
+    /* border: 2px solid powderblue; */
     width: 70%;
     height: 45%;
-    float: left;
+    /* float: left; */
     animation-name: up;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -73,6 +75,53 @@
         transform: translateY(0);
     }
 }
+
+.slideshow {
+    /* display: flex; */
+    /* height: 100px; */
+    /* width: 100%; */
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    width: 300%;
+    height: 100%;
+    /* box-sizing: border-box; */
+    animation: slideshow 16s infinite;
+}
+
+.slider-wrapper div {
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+
+.slide1, .slide2, .slide3 {
+    /* border: 1px solid red; */
+    width: 33%;
+}
+
+.slide1 {
+    background-color: rgb(241, 220, 220);
+}
+
+.slide2 {
+    background-color: rgb(236, 205, 205);
+}
+
+.slide3 {
+    background-color: rgb(235, 191, 191);
+}
+
+@keyframes slideshow{
+    0% {margin-right: -0%;}
+
+    33% {margin-right: -100%;}
+
+    100% {margin-left: -198%;}
+} 
 
 .banner {
     width: 100%;
@@ -144,6 +193,11 @@
     padding: 30px 30px; 
 }
 
+hr {
+    border-top: 1px solid black;
+    width: 97%;
+}
+
 .row {
     display: flex;
     margin: 40px 60px;
@@ -191,12 +245,13 @@
     margin-bottom: 20%;
 }
 
-/*This makes buttons change their color when they are hovered*/
+/* This makes buttons change their color when they are hovered */
 .button:hover {
     background: #B5A663;
     color: black;
 }
 
+/********** Modal Window **********/
 .modal-window {
     position: fixed;
     background-color: rgba(200, 200, 200, 0.75);
@@ -255,7 +310,31 @@
 
 .modal-close:hover {
     color: #000;
+} 
+
+.modal-info-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
 }
+
+.img-modal-container {
+    background-color: #f1f1f1;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    /* line-height: 75px; */
+    font-size: 30px;
+}
+
+.modal-item-info {
+    background-color: #f1f1f1;
+    width: 70%;
+    margin: 10px;
+    text-align: center;
+    /* line-height: 75px; */
+    font-size: 30px;
+} 
 
 /********** Footer **********/
 footer{
