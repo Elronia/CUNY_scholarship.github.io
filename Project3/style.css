@@ -1,0 +1,137 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient(to top right, rgb(136, 218, 197), rgb(243, 198, 205));
+}
+
+.headerBox{
+    width: 100%;
+    height: auto;
+    border: red 2px solid;
+}
+
+.Box1{
+    width: 100%;
+    height: auto;
+    border: 2px black solid;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.Box1 > div {
+    border: purple 2px solid;
+    width: 50%;
+    height: 50px;
+}
+
+.btn-right {
+    /* background-color: grey; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-right > a > button {
+    margin-right: 20px;
+}
+
+.h-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-left > p {
+    margin: 10px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+hr {
+    border-top: 2px white solid;
+    margin: 50px 2%;
+}
+
+.division {
+    border: 2px black solid;
+    width: 100%;
+    height: 100px;
+}
+
+.question-logo{
+    background-color: lightgoldenrodyellow;
+    width: 150px;
+    height: auto;
+    border: 2px lightgoldenrodyellow solid;
+    position: relative;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+
+.question-logo>img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Box 2 ---------------------------------------- */
+
+.Box2{
+    margin-top: 15vh;
+    border: lime solid 2px;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Box2>div{
+    width: 48%;
+    height: 80%;
+    border: magenta 2px solid;
+}
+
+.msg{
+    width: 100%;
+    height: 50%;
+    border: maroon 2px solid;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score{
+    width: 100%;
+    height: 50%;
+    border: maroon 2px solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user-input{
+    width: 30%;
+    height: 20%;
+    font-size: 3em;
+    text-align: center;
+    background-color: inherit;
+    border: lightcoral solid 2px;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 200px;
+}

@@ -6,11 +6,16 @@
 // 2. Print a string to the console containing the bill value, the tip, and the final value (bill + tip). Example:
 // 'The bill was 275, the tip was 41.25, and the total value 316.25'
 // * TEST DATA: Test for bill values 275, 28 and 430
-console.log("Part A");
+console.log("Part A - Tip Calculator");
+const bills1 = [275, 28, 430];
 
-
-
-
+for (let i = 0; i < 3; i++) {
+    let tip15 = bills1[i] * 0.15;
+    let tip20 = bills1[i] * 0.20;
+    bills1[i] > 300 && bills1[i] < 30
+    ? console.log(`If the bill is $${bills1[i]}, the tip would be $${tip20}, and the total value is $${bills1[i] + tip20}.`) 
+    : console.log(`If the bill is $${bills1[i]}, the tip would be $${tip15}, and the total value is $${bills1[i] + tip15}.`);
+}
 
 
 // B.
@@ -34,6 +39,7 @@ function fahrenheitToCelsius() {
 }
 fahrenheitToCelsius(86);
 
+
 // C.
 // Back to the two teams game! There is a new discipline, which works differently.
 // Each team competes 3 times, and then the average of the 3 scores is calculated (so one average score per
@@ -50,13 +56,43 @@ fahrenheitToCelsius(86);
 // TEST DATA 2: Nets score 85, 54 and 41. Knicks score 23, 34 and 27
 console.log("\nPart C");
 
-const calcAverage = () => {
+netsdata1 = [44, 23, 71];
+knicksdata1 = [65, 54, 49];
 
+netsdata2 = [85, 54, 41];
+knicksdata2 = [23, 34, 27];
+
+const calcAverage = (array) => {
+    let total = 0;
+    for (let i = 0; i < array.length; i++) {
+        total += array[i]; 
+    }
+    return total/array.length;
 }
 
-const checkWinner = () => {
+//Use the function to calculate the averages
+let avgNets1 = calcAverage(netsdata1);
+let avgNets2 = calcAverage(netsdata2);
 
+let avgKnicks1 = calcAverage(knicksdata1);
+let avgKnicks2 = calcAverage(knicksdata2);
+
+const checkWinner = (Knicks, Nets) => {
+    if (Knicks > 2 * Nets) {
+        return `the Knicks win (${Knicks} vs ${Nets})`;
+    }
+    else if (Nets > 2 * Knicks){
+        return `the Nets win (${Nets} vs ${Knicks})`;
+    }
+    else {
+        return `no team wins`;
+    }
 }
+
+console.log(`For test data 1, ${checkWinner(avgKnicks1, avgNets1)}.`);
+
+console.log(`For test data 2, ${checkWinner(avgKnicks2, avgNets2)}!`);
+
 
 // D
 // Lucas is still building his tip calculator, using the same rules as before: Tip 15% of the bill if the bill value is between 50 and 300, and
