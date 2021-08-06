@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="mainBox">
+
+        <div class="Box1">
+
+          <div class = "hLeft">
+            <p>Guess the number between 1 and 100</p>
+          </div>
+
+          <div class="btn-right">
+            <a href="#"> <button type="button" name="button" class="reset btn">RESET</button> </a>
+          </div>
+
+        </div>
+        <div class="title">   
+            <div class="title-box">
+                <h1 id='title'>Guess My Number</h1>    
+            </div>
+            
+        </div>
+
+        <div class="division">
+            <hr>
+            <div class="questionLogo">
+                <img id='img-display' src="question_logo2.png" alt="">
+            </div>
+        </div>
+
+        
+        <div class="Box2">
+            <div class="scoreInfo">
+                <div class="msg">
+                    <p id="msg">Let's Start Guessing...</p>
+                </div>
+                <div class="score">
+                    <p>&#127941 Score: <span class="scr">10</span> </p>
+                    <p>&#127942 Highscore: <span class="highestScr">0</span></p>
+                </div>
+            </div>
+            <div class="inputSection">
+                <input type="text" class="user-input"> <br>
+                <button class="btn-check btn">CHECK</button>
+                
+            </div>
+        </div>
+        
+        <div class="Box3"></div>
+        
+    </div>
+
+    <div class="guess-history-container">
+        <p class="guess-history-header">Guess History:</p>
+        <div class="guess-history">
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

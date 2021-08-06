@@ -1,18 +1,21 @@
-body{
+body {
     height: 100vh;
-    background-image: linear-gradient(to top right, rgb(136, 218, 197), rgb(243, 198, 205));
+    background-color:  #040122;
+    /* background-image: linear-gradient(to top right, #252627, #D3D4D9); */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
-.headerBox{
+.mainBox {
     width: 100%;
     height: auto;
-    border: red 2px solid;
+    /* border: red 2px solid; */
 }
 
-.Box1{
+.Box1 {
     width: 100%;
     height: auto;
-    border: 2px black solid;
+    /* border: 2px black solid; */
     box-sizing: content-box;
     display: flex;
     flex-direction: row;
@@ -20,13 +23,14 @@ body{
 }
 
 .Box1 > div {
-    border: purple 2px solid;
+    /* border: purple 2px solid; */
     width: 50%;
-    height: 50px;
+    height: 70px;
+    margin-bottom: 10px;
 }
 
 .btn-right {
-    /* background-color: grey; */
+    /* background-color: lightyellow; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,102 +40,154 @@ body{
     margin-right: 20px;
 }
 
-.h-left {
+.hLeft {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.h-left > p {
+.hLeft > p {
     margin: 10px;
+
 }
 
 .title {
     width: 100%;
-    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.title-box {
+    border: #BE1830 7px solid;
+    border-radius: 40px;
+    box-shadow: 1px 3px 20px #F1DB4B;
+    margin-bottom: 20px;
+}
+
+.title-box h1 {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 3em;
+    color: #F1DB4B;
+    text-shadow: 5px 5px 10px #BE1830;
 }
 
 hr {
-    border-top: 2px white solid;
     margin: 50px 2%;
+    border-top: 5px solid #D3D4D9;
+    border-radius: 5px;
 }
 
 .division {
-    border: 2px black solid;
+    /* border: black 2px solid; */
     width: 100%;
     height: 100px;
+    position: absolute;
 }
 
-.question-logo{
-    background-color: lightgoldenrodyellow;
+/* After Break---------- */
+
+.questionLogo {
+    background-color: #D3D4D9;
     width: 150px;
-    height: auto;
-    border: 2px lightgoldenrodyellow solid;
+    height: 85px;
+    border: 2px #D3D4D9 solid;
     position: relative;
     top: -100%;
     left: 50%;
     transform: translateX(-50%);
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BE1830;
+    font-weight: bolder;
+    border-radius: 10px;
 }
 
-.question-logo>img{
-    width: 100%;
-    height: 100%;
+.questionLogo > img {
+    width: 75%;
+    height: 90%;
 }
 
 /* Box 2 ---------------------------------------- */
 
-.Box2{
-    margin-top: 15vh;
-    border: lime solid 2px;
+.Box2 {
+    margin-top: 10%;
+    /* border: lime solid 2px; */
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.Box2>div{
+.Box2 > div {
     width: 48%;
-    height: 80%;
-    border: magenta 2px solid;
+    height: auto;
+    /* border: magenta 2px solid; */
 }
 
-.msg{
+.msg {
     width: 100%;
-    height: 50%;
-    border: maroon 2px solid;
+    height: auto;
+    border: #BE1830 2px solid;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.5em;
 }
 
-.score{
+.score {
     width: 100%;
-    height: 50%;
-    border: maroon 2px solid;
+    height: auto;
+    border: #BE1830 2px solid;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 1.5em;
 }
 
-.inputSection{
+
+.inputSection { 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.user-input{
+.user-input {
     width: 30%;
     height: 20%;
     font-size: 3em;
     text-align: center;
     background-color: inherit;
-    border: lightcoral solid 2px;
-    box-shadow: 2px 2px 10px black;
-    border-radius: 200px;
+    border: #BE1830 solid 2px;
+    box-shadow: 0px 0px 10px #F1DB4B;
+    border-radius: 6px;
+    color: white;
+}
+
+.btn {
+    width: 80px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F1DB4B;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.guess-history-container {
+    padding: 20px;
+}
+
+.guess-history-header {
+    float: left; 
+    margin-right: 10px;
 }
