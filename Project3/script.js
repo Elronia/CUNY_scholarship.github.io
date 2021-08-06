@@ -9,28 +9,28 @@ function youLose() {
     // Score becomes 0 and Display 
     score = 0;
     document.querySelector('.scr').textContent = score;
-    // Message Loge displays Game Over
+    // Message Log displays Game Over
     msgLog().style.fontSize = '2em';
     msgLog().style.fontWeight = 'bold';
     msgLog().textContent = `GAME OVER`;
     // Disables Check Button
     document.querySelector('.btn-check').disabled = true;
-    // Disable input box
+    // Disables input box
     document.querySelector('.user-input').disabled = true;
     // Update the title to denote the correct number
     document.querySelector('#title').textContent = 'Correct Number Was:';
     document.querySelector('#title').style.color = '#BE1830';
     document.querySelector('.title-box').style.background = '#393A41';
-    // Displays whet the correct aswer was on  the logo box
+    // Displays when the correct answer was on the logo box
     document.querySelector('.questionLogo').style.fontSize = '4em';       
     document.querySelector('.questionLogo').textContent = randomNumber;
-    // Change of characteristics to the msg div to denote userd lost
+    // Change of characteristics to the msg div to denote user's lost
     document.querySelector('.msg').style.background = '#BE1830';
     msgLog().style.textShadow = '0px 0px 5px #F1DB4B';
     msgLog().style.color = '#040122';
 }
 
-// This function is executer in case the userd inputs an incorrect guess
+// This function is executed in case the user's input is an incorrect guess
 function hint (input, random) {
     if (input > random) {
         msgLog().style.color = "#BE1830";
@@ -43,14 +43,14 @@ function hint (input, random) {
     }
 }
 
-// This function is executed in case the userd guesses the number
+// This function is executed in case the user guesses the correct number
 function youWin() {
     // Message log message, color and size font
     msgLog().style.color = "#BE1830";
     msgLog().style.fontSize = "2em";
-    msgLog().textContent = "YOU WIN";
+    msgLog().textContent = "YOU WIN! 🎉";
 
-    // Generate a new random Number after userd win
+    // Generate a new random Number after user's win
     randomNumber = Math.floor(Math.random() * 100 + 1);
     console.log("NEW RANDOMNUMBER: " + randomNumber);
 
@@ -67,13 +67,16 @@ function youWin() {
     
 }
 
-// This funtion replaces the previous highest score
+// This function replaces the previous highest score
 function highscore(scr, hgscr) {
+    // console.log('Score from scr: '+ scr)
+    // console.log('HighScore from hgscr: '+ hgscr)
     if (scr > hgscr) {
         hgscr = scr;
-        console.log(`highscore: ${hgscr}`);
-        document.querySelector('.highestScr').textContent = hgscr;
-    } 
+        return hgscr;
+    } else {
+        return hgscr;
+    }
 }
 
 function wrongInputLayout() {
@@ -100,7 +103,7 @@ document.querySelector('.btn-check').addEventListener('click', function() {
         wrongInputLayout();
         msgLog().textContent = "Invalid Input";
 
-    } else if(inputUser < 0) {
+    } else if (inputUser < 0) {
 
         wrongInputLayout();
         msgLog().textContent = "Please, enter a positive number";
@@ -139,9 +142,9 @@ document.querySelector('.btn-check').addEventListener('click', function() {
         // Yes: You win 
         // No: Check next condition
         else if (inputUser === randomNumber){
-
             youWin();
-            highscore(score, highScore);
+            highScore = highscore(score,highScore);
+            document.querySelector('.highestScr').textContent = highScore 
             score = 10;
             document.querySelector('.scr').textContent = score;
         }
@@ -152,7 +155,7 @@ document.querySelector('.btn-check').addEventListener('click', function() {
             youLose();
         }
     }
-})
+});
 
 document.querySelector('.reset').addEventListener('click',function() {
     // Score reset to 10 and display 
@@ -167,8 +170,8 @@ document.querySelector('.reset').addEventListener('click',function() {
     document.querySelector('.highestScr').textContent = highScore;
 
     // Original msg display 
-     msgLog().textContent = 'Lets start Guessing...';
-     msgLog().style.color = "black";
+    msgLog().textContent = 'Let\'s Start Guessing...';
+    msgLog().style.color = "black";
     msgLog().style.fontSize = "1em";
 
     // original img display 
@@ -208,4 +211,4 @@ function displayGuesses() {
         p.style.float = "left";
         guessContainer().appendChild(p);
     });
-}
+};
